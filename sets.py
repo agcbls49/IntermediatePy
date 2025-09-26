@@ -1,46 +1,46 @@
 # Sets: Unordered, Mutable, No Duplicates
-myset = {1, 2, 3}
-print(myset)
+my_set = {1, 2, 3}
+print(my_set)
 
 # No duplicates so only 1, 2, 3 are printed
-myset = {1, 2, 3, 1, 2}
-print(myset)
+my_set = {1, 2, 3, 1, 2}
+print(my_set)
 
 # Use set function with iterable list
-myset = set([1, 2, 3])
-print(myset)
+my_set = set([1, 2, 3])
+print(my_set)
 
 # Set with String
-myset = set("Hello")
-print(myset)
+my_set = set("Hello")
+print(my_set)
 
 # Create an empty set
-myset = set()
-myset.add(1)
-myset.add(2)
-myset.add(3)
-print(myset)
+my_set = set()
+my_set.add(1)
+my_set.add(2)
+my_set.add(3)
+print(my_set)
 
 # Remove/Discard elements 
-myset.remove(3)
-myset.discard(3)
-print(myset)
+my_set.remove(3)
+my_set.discard(3)
+print(my_set)
 
 # Clear the list
-myset.clear()
-print(myset)
+my_set.clear()
+print(my_set)
 
 # Remove the curly and return 1 (LIFO - Last in First Out)
-print(myset.pop())
+print(my_set.pop())
 # this shows 2 & 3
-print(myset)
+print(my_set)
 
 # Iterate through the set
-for i in myset:
+for i in my_set:
     print(i)
 
 # Check if element is inside the set
-if 1 in myset:
+if 1 in my_set:
     print("yes")
 else:
     print("no")
