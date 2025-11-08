@@ -1,6 +1,7 @@
 #  Collections: Counter, namedtuple, OrderedDict, defaultdict, deque
 
 # Use Counter count hashable objects
+print("Counter")
 from collections import Counter
 a = "aaaaabbbbccc"
 my_counter = Counter(a)
@@ -34,6 +35,7 @@ print(my_counter.most_common(1)[0])
 print(list(my_counter.elements()))
 
 # Named Tuple is similar to a struct
+print("\nNamed Tuple")
 from collections import namedtuple
 # class name is the string Point similar to the variable name
 # this creates a classs called Point with fields x and y
@@ -49,6 +51,7 @@ print(pt.x, pt.y)
 # Ordered Dictionary is like a regular dictionary but they 
 # remember the order that the items were inserted
 # kind of unnecessary since its guranteed in newer Python versions
+print("\nOrdered Dict")
 from collections import OrderedDict
 ordered_dict = OrderedDict()
 
@@ -61,6 +64,7 @@ print(ordered_dict)
 
 # DefaultDict is similar to the default but it has a default value 
 # if the key has not been set yet
+print("\nDefault Dict")
 from collections import defaultdict
 
 # Create a dictionary with a default value of integers
@@ -81,7 +85,8 @@ print(d['a'])
 print(d['c'])
 
 # Deque is a double ended queue and can be 
-# used to add or remove elements from both ends  
+# used to add or remove elements from both ends
+print("\nDeque")
 from collections import deque
 d = deque()
 d.append(1)
